@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerAbilities : MonoBehaviour
 {
+    public delegate void ActivateAbility(int abilityState);
+    public static event ActivateAbility activateAbility;
+
     public enum AbilityState
     {
         Normal,
@@ -25,7 +28,10 @@ public class PlayerAbilities : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            ToggleAbility();
+        }
     }
 
     public void ToggleAbility()
@@ -40,6 +46,10 @@ public class PlayerAbilities : MonoBehaviour
         }
 
         SetCamera();
+        if (activateAbility != null)
+        {
+            activateAbility((int) _currentState);
+        }
     }
 
     private void SetCamera()

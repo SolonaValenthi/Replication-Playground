@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject _cameraRoot;
     [SerializeField] private CinemachineFreeLook _playerCam;
-    [SerializeField] private PlayerAbilities _playerAbilities;
 
     private float _camRotationX;
 
@@ -21,11 +20,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         RotateCameraRoot();
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            _playerAbilities.ToggleAbility();
-        }
     }
 
     private void LateUpdate()
