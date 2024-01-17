@@ -6,7 +6,6 @@ using Cinemachine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject _cameraRoot;
-    [SerializeField] private CinemachineFreeLook _playerCam;
 
     private float _camRotationX;
 

@@ -732,7 +732,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraRoot: {fileID: 619822106}
-  _playerCam: {fileID: 1152013035}
 --- !u!114 &580414875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,6 +745,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _abilityAnim: {fileID: 580414876}
+  _cam: {fileID: 963194227}
+  _cameraRoot: {fileID: 619822106}
 --- !u!95 &580414876
 Animator:
   serializedVersion: 5
@@ -2086,7 +2087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488546778}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.045657203, y: -0.074371025, z: -0.00088290044, w: 0.9961845}
+  m_LocalRotation: {x: 0.045657203, y: -0.07437103, z: -0.00088290044, w: 0.9961845}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2603,7 +2604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951656794}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10281141, y: -0.07429893, z: 0.0033910852, w: 0.99191636}
+  m_LocalRotation: {x: 0.10281141, y: -0.074298926, z: 0.003391085, w: 0.99191636}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2682,7 +2683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137141514}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07417023, y: -0.0743658, z: 0.0012475253, w: 0.9944682}
+  m_LocalRotation: {x: 0.074170224, y: -0.0743658, z: 0.0012475252, w: 0.9944682}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
