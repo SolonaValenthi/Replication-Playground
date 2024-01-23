@@ -32,4 +32,8 @@ public class Player : MonoBehaviour
         _cameraRoot.transform.Rotate(Vector3.up * _camRotationX, Space.World);     
     }
 
+    public void Movement(Vector2 move)
+    {
+        
+    }
 }

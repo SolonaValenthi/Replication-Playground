@@ -34,15 +34,7 @@ public class PlayerAbilities : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Q) || Input.GetMouseButtonDown(1))
-        {
-            ToggleAbility();
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            UseAbility();
-        }
+        
     }
 
     public void ToggleAbility()
@@ -71,7 +63,7 @@ public class PlayerAbilities : MonoBehaviour
         _abilityAnim.SetInteger("Ability State", (int)_currentState);
     }
 
-    private void UseAbility()
+    public void UseAbility()
     {
         if (!_objectGrabbed)
         {
